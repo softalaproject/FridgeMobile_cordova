@@ -35,7 +35,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        var ref = cordova.InAppBrowser.open('http://95.217.134.247:8080/fridges/', '_blank', 'location=yes');
+        cordova.InAppBrowser.open('http://95.217.134.247:8080/', '_self', 'location=no');
         window.open = cordova.InAppBrowser.open;
     },
     // Update DOM on a Received Event
