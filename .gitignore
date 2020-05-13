@@ -1,3 +1,6 @@
+# Don't track content of these folders
 node_modules/
-*.md
-release.keystore
+hooks/
+/CONTRIBUTING.md
+/build.json
+/release.keystore

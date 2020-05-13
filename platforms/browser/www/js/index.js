@@ -25,7 +25,7 @@ var app = {
     },
     // IP address with port
     onDeviceReady: function() {
-        cordova.InAppBrowser.open('http://95.217.134.247/', '_self', 'location=no');
+        cordova.InAppBrowser.open('http://95.217.134.247/', '_self', 'location=no,hideurlbar=yes,zoom=no');
         window.open = cordova.InAppBrowser.open;
     },
     // Update DOM on a Received Event
